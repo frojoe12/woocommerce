@@ -8,7 +8,7 @@
 */    
 
 function CUSTOMPLUGINNAME_customise_product_thumbnail_for_product_list() {
-    the_post_thumbnail();
+    the_post_thumbnail(); // set size eg the_post_thumbnail('medium') - max 300x300px , image size 'medium' is configured in Settings>Media in wordpress dashboard
 } 
  
 remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
